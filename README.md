@@ -16,4 +16,4 @@ Portfolio web personal desarrollado como escaparate para mostrar mi perfil técn
 
 ## 🌐 Enlace en vivo
 Puedes acceder a la versión desplegada aquí:  
-👉 ([https://botombadebumbano.github.io/portfolio/])*
+👉 *(https://botombadebumbano.github.io/portfolio/)*
