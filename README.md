@@ -13,7 +13,3 @@ Portfolio web personal desarrollado como escaparate para mostrar mi perfil técn
 - **Proyectos:** Casos de estudio detallados, incluyendo *HotelApp* (Desarrollo de Interfaces con JavaFX y FXML).
 - **Experiencia Laboral:** Prácticas profesionales (prosr4pro y BCD Electro).
 - **Formación Académica:** Grado Superior en DAM, Grado Medio en SMR e Inglés C1 Cambridge.
-
-## 🌐 Enlace en vivo
-Puedes acceder a la versión desplegada aquí:  
-👉 *(https://botombadebumbano.github.io/portfolio/)*
