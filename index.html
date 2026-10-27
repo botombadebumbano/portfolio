@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergio Díaz de Rivera Anta | Portfolio Profesional</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome para Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navegación Superior -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand" onclick="switchView('main')">&lt;SergioDíaz /&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre-mi" onclick="switchView('main')"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+        <li><a href="#competencias" onclick="switchView('main')"><i class="fa-solid fa-code"></i> Competencias</a></li>
+        <li><a href="#proyectos" onclick="switchView('main')"><i class="fa-solid fa-layer-group"></i> Proyectos</a></li>
+        <li><a href="#experiencia" onclick="switchView('main')"><i class="fa-solid fa-briefcase"></i> Experiencia</a></li>
+        <li><a href="#formacion" onclick="switchView('main')"><i class="fa-solid fa-graduation-cap"></i> Formación</a></li>
+        <li><a href="#contacto" onclick="switchView('main')"><i class="fa-solid fa-paper-plane"></i> Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- VISTA PRINCIPAL (PORTFOLIO) -->
+  <div id="main-view" class="view-container active-view">
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section hero-centered">
+      <div class="hero-container">
+        <div class="hero-text text-center">
+          <span class="badge"><i class="fa-solid fa-circle-dot"></i> Disponible para Oportunidades</span>
+          <h1>Sergio Díaz de Rivera Anta</h1>
+          <h2 class="typing-text">Técnico en Sistemas Microinformáticos y Redes & Estudiante de DAM</h2>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> Madrid</p>
+          <div class="hero-buttons center-buttons">
+            <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contactar</a>
+            <a href="#proyectos" class="btn btn-outline"><i class="fa-solid fa-folder-open"></i> Ver Proyectos</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-user-gear icon"></i>
+          <h2>Perfil Personal</h2>
+        </div>
+        <p class="profile-text">
+          Estudiante de segundo curso de <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong>, con formación previa en <strong>Sistemas Microinformáticos y Redes (SMR)</strong>. Apasionado por el desarrollo de software, la programación y las nuevas tecnologías. Cuento con experiencia práctica en soporte técnico, mantenimiento de sistemas y desarrollo de proyectos con control de versiones. Busco una oportunidad para seguir desarrollando mis competencias técnicas y adquirir experiencia profesional.
+        </p>
+      </section>
+
+      <!-- Competencias -->
+      <section id="competencias" class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-laptop-code icon"></i>
+          <h2>Competencias Técnicas</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <i class="fa-brands fa-java skill-icon"></i>
+            <h3>Programación</h3>
+            <p>Java, Python</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa-solid fa-database skill-icon"></i>
+            <h3>Bases de Datos</h3>
+            <p>MySQL, Diseño y Gestión relacional</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa-brands fa-github skill-icon"></i>
+            <h3>Herramientas</h3>
+            <p>Git, GitHub, Android Studio</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa-solid fa-server skill-icon"></i>
+            <h3>Sistemas y Soporte</h3>
+            <p>Instalación de S.O., mantenimiento y resolución de incidencias</p>
+          </div>
+          <div class="skill-box">
+            <i class="fa-solid fa-language skill-icon"></i>
+            <h3>Idiomas</h3>
+            <p><strong>Inglés C1</strong> (Cambridge), Español Nativo</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos (Clickable para abrir detalle) -->
+      <section id="proyectos" class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-layer-group icon"></i>
+          <h2>Proyectos</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card clickable-card" onclick="openProjectDetail('hotelapp')">
+            <div class="project-icon-placeholder highlight-icon">
+              <i class="fa-solid fa-hotel"></i>
+            </div>
+            <h3>HotelApp - Sistema de Reservas</h3>
+            <p class="project-desc">Interfaz de escritorio en JavaFX y FXML para consulta de habitaciones en tiempo real mediante archivos XML.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">XML</span>
+              <span class="tag">Desarrollo de Interfaces</span>
+            </div>
+            <span class="card-action-link">Ver detalles completos <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="project-card empty-card">
+            <div class="project-icon-placeholder">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Próximo Proyecto</h3>
+            <p class="project-desc">Espacio reservado para futuras aplicaciones y desarrollos de software.</p>
+            <div class="tags">
+              <span class="tag">En desarrollo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiencia -->
+      <section id="experiencia" class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-briefcase icon"></i>
+          <h2>Experiencia Laboral y Prácticas</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="date-badge">Mayo – Junio 2026 (15 días)</span>
+              <h3>Técnico en Prácticas — <span class="company">prosr4pro</span></h3>
+              <ul>
+                <li>Diseño y programación de servidor <strong>MCP (Model Context Protocol)</strong> integrado con <strong>Claude</strong>.</li>
+                <li>Gestión del flujo de trabajo y control de versión con <strong>GitHub</strong>.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">MCP</span>
+                <span class="tag">Claude AI</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="date-badge">Marzo – Junio 2025 (3 meses)</span>
+              <h3>Técnico en Prácticas — <span class="company">BCD Electro</span></h3>
+              <ul>
+                <li>Diagnóstico y reparación de sistemas informáticos y hardware.</li>
+                <li>Instalación de sistemas operativos y soporte técnico en entornos cliente.</li>
+                <li>Mantenimiento de equipos con control de versiones.</li>
+              </ul>
+              <span class="recommendation"><i class="fa-solid fa-certificate"></i> Carta de recomendación disponible</span>
+              <div class="tags">
+                <span class="tag">Hardware</span>
+                <span class="tag">Sistemas Operativos</span>
+                <span class="tag">SMR</span>
+                <span class="tag">Soporte Técnico</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formación -->
+      <section id="formacion" class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-graduation-cap icon"></i>
+          <h2>Formación Académica</h2>
+        </div>
+        <div class="education-grid">
+          <div class="edu-card active">
+            <div class="edu-status">En curso - 2º Año</div>
+            <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <p class="institution"><i class="fa-solid fa-school"></i> Prometeo FP - Thepower</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-status">2023 – 2025 (2 años)</div>
+            <h3>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+            <p class="institution"><i class="fa-solid fa-school"></i> Colegio Valle del Miro</p>
+          </div>
+          <div class="edu-card">
+            <div class="edu-status">2019 – 2023 (4 años)</div>
+            <h3>Educación Secundaria Obligatoria (ESO)</h3>
+            <p class="institution"><i class="fa-solid fa-school"></i> IES Maestro Matías Bravo</p>
+            <p class="achievement"><i class="fa-solid fa-award"></i> Con Diploma de Aprovechamiento</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="section-card contact-section">
+        <div class="section-header">
+          <i class="fa-solid fa-paper-plane icon"></i>
+          <h2>Contacto</h2>
+        </div>
+        <p class="contact-subtitle">¿Interesado en mi perfil? Ponte en contacto conmigo directamente:</p>
+        <div class="contact-grid">
+          <div class="contact-box" onclick="copyToClipboard('sediri2007@gmail.com', 'Email copiado')">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <h4>Correo Electrónico</h4>
+            <p>sediri2007@gmail.com</p>
+            <span class="click-hint"><i class="fa-regular fa-copy"></i> Haz clic para copiar</span>
+          </div>
+          <div class="contact-box" onclick="copyToClipboard('628243726', 'Teléfono copiado')">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <h4>Teléfono / WhatsApp</h4>
+            <p>+34 628 24 37 26</p>
+            <span class="click-hint"><i class="fa-regular fa-copy"></i> Haz clic para copiar</span>
+          </div>
+          <div class="contact-box">
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <h4>Ubicación</h4>
+            <p>Madrid - España</p>
+            <span class="click-hint">Disponibilidad para trabajar</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- VISTA DE DETALLE DEL PROYECTO (HOTELAPP) -->
+  <div id="detail-view" class="view-container">
+    <div class="detail-container">
+      <button class="back-btn" onclick="switchView('main')">
+        <i class="fa-solid fa-arrow-left"></i> Volver al Portfolio
+      </button>
+
+      <div class="detail-header-banner">
+        <span class="badge">Desarrollo de Interfaces</span>
+        <h1>HotelApp - Sistema de Reservas</h1>
+        <p class="detail-subtitle">Proyecto práctico de interfaz JavaFX y FXML conectado a datos XML.</p>
+        <div class="detail-meta">
+          <span><i class="fa-solid fa-user"></i> Autor: Sergio Díaz de Rivera Anta</span>
+          <span><i class="fa-regular fa-calendar"></i> Fecha: Octubre 2026</span>
+        </div>
+      </div>
+
+      <!-- Momento 1 -->
+      <div class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-folder-tree icon"></i>
+          <h2>Momento 1: Estructura y Arquitectura del Proyecto</h2>
+        </div>
+        <p class="profile-text">
+          La aplicación está estructurada en Java utilizando Maven (`pom.xml`). Los archivos principales son:
+        </p>
+        <ul class="detail-list">
+          <li><strong>Main.java:</strong> Punto de entrada principal que inicializa la aplicación JavaFX y carga la escena inicial.</li>
+          <li><strong>Controllers/DatosController.java:</strong> Controlador encargado de gestionar la lógica de negocio, procesar el archivo XML y manejar las interacciones del usuario.</li>
+          <li><strong>resources/vista.fxml:</strong> Fichero FXML que define el diseño visual de la interfaz de usuario.</li>
+          <li><strong>resources/reservas.xml:</strong> Base de datos ligera en formato XML que almacena las habitaciones y el estado de sus reservas.</li>
+        </ul>
+      </div>
+
+      <!-- Momento 2 -->
+      <div class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <h2>Momento 2: Interfaz y Lógica de Búsqueda</h2>
+        </div>
+        <p class="profile-text">
+          Al introducir un número de habitación en el campo de texto y pulsar el botón <strong>«Buscar»</strong>, el controlador consulta el archivo XML para verificar el estado de dicha habitación. Dependiendo del resultado, la interfaz actualiza un componente <code>Label</code> mostrando de forma dinámica si está <em>Disponible</em>, <em>Ocupada</em> o si <em>No existe</em>.
+        </p>
+      </div>
+
+      <!-- Pruebas Obligatorias -->
+      <div class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-clipboard-check icon"></i>
+          <h2>Resultados de Pruebas Obligatorias</h2>
+        </div>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Prueba / Estado</th>
+                <th>Dato Introducido</th>
+                <th>Resultado Esperado</th>
+                <th>Resultado Obtenido</th>
+                <th>¿Correcta?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Disponible</strong></td>
+                <td>N.º: 130</td>
+                <td>Indica disponible</td>
+                <td>Número de habitación: 130 - Habitación disponible</td>
+                <td><span class="badge-success">Sí</span></td>
+              </tr>
+              <tr>
+                <td><strong>2. Ocupada</strong></td>
+                <td>N.º: 103</td>
+                <td>Indica ocupada</td>
+                <td>Número de habitación: 103 - Habitación ocupada</td>
+                <td><span class="badge-success">Sí</span></td>
+              </tr>
+              <tr>
+                <td><strong>3. No existe</strong></td>
+                <td>N.º: 150</td>
+                <td>Indica que no existe</td>
+                <td>Número de habitación: 150 - La habitación no existe</td>
+                <td><span class="badge-success">Sí</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Momento 3 -->
+      <div class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-lightbulb icon"></i>
+          <h2>Momento 3: Propuesta de Mejora (Gestos y Realidad Aumentada)</h2>
+        </div>
+        <p class="profile-text">
+          Mientras que la Parte 1 implementa una interfaz básica textual de ocupación leída desde XML, la propuesta de mejora para la Parte 2 en grupo consiste en integrar el tema asignado de <strong>Gestos y Realidad Aumentada.</strong>
+        </p>
+        <p class="profile-text" style="margin-top: 1rem;">
+          Se proyecta desarrollar una vista visual interactiva en <strong>360°</strong> de las habitaciones dependiendo de su capacidad y tipología (habitaciones premium con dos camas, etc.), manteniendo la sólida base de búsqueda por número ya programada en esta primera fase.
+        </p>
+      </div>
+
+      <div class="text-center" style="margin-bottom: 3rem;">
+        <button class="btn btn-primary" onclick="switchView('main')">
+          <i class="fa-solid fa-arrow-left"></i> Volver al Portfolio Principal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Sergio Díaz de Rivera Anta | Desarrollado con HTML5, CSS3 y JS</p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">¡Copiado al portapapeles!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
