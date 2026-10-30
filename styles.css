@@ -905,4 +905,19 @@ body {
   .menu-toggle {
     display: block;
   }
+
+  .real-image-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: #000;
+}
+
+.project-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
 }
