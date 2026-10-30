@@ -116,7 +116,7 @@
             <span class="card-action-link">Ver detalles del Proyecto 1 <i class="fa-solid fa-arrow-right"></i></span>
           </div>
 
-          <!-- Proyecto 2 (Independiente y Detallado) -->
+          <!-- Proyecto 2 -->
           <div class="project-card clickable-card project-featured" onclick="openProjectDetail('hotel3d')">
             <div class="project-icon-placeholder highlight-icon">
               <i class="fa-solid fa-vr-cardboard"></i>
@@ -265,10 +265,49 @@
           <li><strong>resources/reservas.xml:</strong> Fuente de datos XML con estado de habitaciones[cite: 2, 3].</li>
         </ul>
       </div>
+
+      <div class="section-card">
+        <div class="section-header">
+          <i class="fa-solid fa-clipboard-check icon"></i>
+          <h2>Resultados de las Pruebas</h2>
+        </div>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Prueba</th>
+                <th>Número</th>
+                <th>Resultado Esperado</th>
+                <th>Obtenido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Disponible</td>
+                <td>130[cite: 4]</td>
+                <td>Habitación disponible[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
+              </tr>
+              <tr>
+                <td>2. Ocupada</td>
+                <td>103[cite: 4]</td>
+                <td>Habitación ocupada[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
+              </tr>
+              <tr>
+                <td>3. No existe</td>
+                <td>150[cite: 4]</td>
+                <td>La habitación no existe[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- VISTA DE DETALLE: PROYECTO 2 (DETALLADO Y NUEVO) -->
+  <!-- VISTA DE DETALLE: PROYECTO 2 (DETALLADO) -->
   <div id="detail-view-3d" class="view-container">
     <div class="detail-container">
       <button class="back-btn" onclick="switchView('main')">
@@ -281,7 +320,7 @@
         <p class="detail-subtitle">Simulación interactiva avanzada del pasillo del hotel con control de movimiento, sensores y asistente conversacional[cite: 6].</p>
         <div class="detail-meta">
           <span><i class="fa-solid fa-user"></i> Autor: Sergio Díaz de Rivera Anta</span>
-          <span><i class="fa-solid id-badge"></i> Tema: Simulación Virtual / Realidad Aumentada</span>
+          <span><i class="fa-solid fa-vr-cardboard"></i> Tema: Simulación Virtual / Realidad Aumentada</span>
         </div>
       </div>
 
@@ -426,7 +465,7 @@
             <div class="phase-number">Fase 2</div>
             <div class="phase-content">
               <h3>Navegación Interactiva y Sensores Activos</h3>
-              <p>Implementación del panel de control de movimiento flotante (*Avanzar*, *Izquierda*, *Derecha*, *Parar*) y calibración de los sensores del dispositivo móvil (giroscopio) para permitir el desplazamiento libre y fluido por la galería[cite: 6].</p>
+              <p>Implementación del panel de control de movimiento flotante (<em>Avanzar</em>, <em>Izquierda</em>, <em>Derecha</em>, <em>Parar</em>) y calibración de los sensores del dispositivo móvil (giroscopio) para permitir el desplazamiento libre y fluido por la galería[cite: 6].</p>
             </div>
           </div>
 
@@ -442,7 +481,7 @@
             <div class="phase-number">Fase 4</div>
             <div class="phase-content">
               <h3>Integración de Ficha Dinámica y Asistente IA (Lucía)</h3>
-              <p>Sincronización del panel lateral de la habitación seleccionada con el archivo XML de datos y desarrollo del widget conversacional inteligente (*Lucía*) capaz de responder preguntas frecuentes sobre precios, capacidad y estado de las habitaciones[cite: 6].</p>
+              <p>Sincronización del panel lateral de la habitación seleccionada con el archivo XML de datos y desarrollo del widget conversacional inteligente (<em>Lucía</em>) capaz de responder preguntas frecuentes sobre precios, capacidad y estado de las habitaciones[cite: 6].</p>
             </div>
           </div>
         </div>
