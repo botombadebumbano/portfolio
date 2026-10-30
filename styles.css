@@ -749,7 +749,99 @@ body {
   color: #d1d5db;
 }
 
-/* Adaptación a Pantallas Pequeñas */
+/* Vistas de Detalle generales */
+.detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem 3rem 1.5rem;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.back-btn:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--primary);
+}
+
+.detail-header-banner {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.detail-header-banner h1 {
+  font-size: 2.2rem;
+  margin: 0.8rem 0 0.5rem 0;
+}
+
+.detail-subtitle {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.detail-list {
+  margin: 1rem 0 0 1.5rem;
+  color: #d1d5db;
+}
+
+.detail-list li {
+  margin-bottom: 0.6rem;
+}
+
+/* Footer y Toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2000;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 850px) {
   .sim-grid {
     grid-template-columns: 1fr;
