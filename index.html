@@ -113,24 +113,24 @@
               <span class="tag">XML</span>
               <span class="tag">Desarrollo de Interfaces</span>
             </div>
-            <span class="card-action-link">Ver detalles de la Fase 1 <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="card-action-link">Ver detalles del Proyecto 1 <i class="fa-solid fa-arrow-right"></i></span>
           </div>
 
-          <!-- Proyecto 2 (Nuevo) -->
+          <!-- Proyecto 2 (Independiente y Detallado) -->
           <div class="project-card clickable-card project-featured" onclick="openProjectDetail('hotel3d')">
             <div class="project-icon-placeholder highlight-icon">
               <i class="fa-solid fa-vr-cardboard"></i>
             </div>
-            <div class="project-badge-new">Proyecto 2 - Ampliación</div>
+            <div class="project-badge-new">Proyecto 2</div>
             <h3>Hotel Sol 3D - Visita Inmersiva y Asistente Lucía</h3>
-            <p class="project-desc">Simulación virtual del pasillo en 3D interactivo con sensores activos, interacción táctil/móvil con puertas y chatbot inteligente Lucía integrado[cite: 6].</p>
+            <p class="project-desc">Evolución avanzada con simulación virtual 3D del pasillo, navegación por sensores/móvil, interacción táctil en puertas y asistente virtual inteligente Lucía[cite: 6].</p>
             <div class="tags">
               <span class="tag">Simulación 3D</span>
               <span class="tag">Sensores / Giroscopio</span>
-              <span class="tag">Asistente IA</span>
-              <span class="tag">XML Dynamic</span>
+              <span class="tag">Asistente IA (Lucía)</span>
+              <span class="tag">XML Dinámico</span>
             </div>
-            <span class="card-action-link">Ver simulación y fases <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="card-action-link">Ver desglose y fases del Proyecto 2 <i class="fa-solid fa-arrow-right"></i></span>
           </div>
 
         </div>
@@ -240,7 +240,7 @@
     </main>
   </div>
 
-  <!-- VISTA DE DETALLE: PROYECTO 1 (HOTELAPP) -->
+  <!-- VISTA DE DETALLE: PROYECTO 1 -->
   <div id="detail-view" class="view-container">
     <div class="detail-container">
       <button class="back-btn" onclick="switchView('main')">
@@ -265,49 +265,10 @@
           <li><strong>resources/reservas.xml:</strong> Fuente de datos XML con estado de habitaciones[cite: 2, 3].</li>
         </ul>
       </div>
-
-      <div class="section-card">
-        <div class="section-header">
-          <i class="fa-solid fa-clipboard-check icon"></i>
-          <h2>Resultados de las Pruebas</h2>
-        </div>
-        <div class="table-responsive">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Prueba</th>
-                <th>Número</th>
-                <th>Resultado Esperado</th>
-                <th>Obtenido</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1. Disponible</td>
-                <td>130[cite: 4]</td>
-                <td>Habitación disponible[cite: 4]</td>
-                <td><span class="badge-success">Sí</span>[cite: 4]</td>
-              </tr>
-              <tr>
-                <td>2. Ocupada</td>
-                <td>103[cite: 4]</td>
-                <td>Habitación ocupada[cite: 4]</td>
-                <td><span class="badge-success">Sí</span>[cite: 4]</td>
-              </tr>
-              <tr>
-                <td>3. No existe</td>
-                <td>150[cite: 4]</td>
-                <td>La habitación no existe[cite: 4]</td>
-                <td><span class="badge-success">Sí</span>[cite: 4]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- VISTA DE DETALLE: PROYECTO 2 (HOTELSOL 3D) -->
+  <!-- VISTA DE DETALLE: PROYECTO 2 (DETALLADO Y NUEVO) -->
   <div id="detail-view-3d" class="view-container">
     <div class="detail-container">
       <button class="back-btn" onclick="switchView('main')">
@@ -315,19 +276,23 @@
       </button>
 
       <div class="detail-header-banner">
-        <span class="badge">Proyecto 2 · Ampliación Inmersiva</span>
-        <h1>Hotel Sol / Luxury Experience — Visita 3D y Lucía AI</h1>
-        <p class="detail-subtitle">Simulación virtual del pasillo del hotel con sensores de movimiento y asistente inteligente[cite: 6].</p>
+        <span class="badge">Proyecto 2 · Ampliación Inmersiva y Realidad Virtual</span>
+        <h1>Hotel Sol / Luxury Experience — Visita 3D y Asistente Lucía</h1>
+        <p class="detail-subtitle">Simulación interactiva avanzada del pasillo del hotel con control de movimiento, sensores y asistente conversacional[cite: 6].</p>
+        <div class="detail-meta">
+          <span><i class="fa-solid fa-user"></i> Autor: Sergio Díaz de Rivera Anta</span>
+          <span><i class="fa-solid id-badge"></i> Tema: Simulación Virtual / Realidad Aumentada</span>
+        </div>
       </div>
 
-      <!-- Muestra / Mockup visual interactivo de la interfaz -->
+      <!-- Sección Visual / Mockup del Resultado -->
       <div class="section-card preview-3d-card">
         <div class="section-header">
           <i class="fa-solid fa-desktop icon"></i>
-          <h2>Resultado y Captura del Entorno Virtual 3D</h2>
+          <h2>Captura del Entorno Virtual y Resultado Final</h2>
         </div>
         
-        <!-- Recreación Fiel de la Pantalla del Proyecto 2 -->
+        <!-- Recreación Interactiva de la Interfaz Solicitada -->
         <div class="sim-window">
           <div class="sim-top-bar">
             <div class="sim-logo"><strong>HS</strong> HOTEL SOL / <span>LUXURY EXPERIENCE</span></div>
@@ -340,15 +305,14 @@
           </div>
 
           <div class="sim-grid">
-            <!-- Render del pasillo 3D -->
+            <!-- Render del Pasillo 3D -->
             <div class="sim-canvas-viewport">
               <div class="sim-viewport-title">Galería principal · experiencia 3D <span class="room-selected-badge">Habitación 107 seleccionada</span></div>
               <div class="sim-corridor-graphic">
-                <!-- Luces de techo -->
                 <div class="ceiling-light l1"></div>
                 <div class="ceiling-light l2"></div>
                 <div class="ceiling-light l3"></div>
-                <!-- Puertas a los lados -->
+                
                 <div class="door-left d115">115</div>
                 <div class="door-left d117">117</div>
                 <div class="door-left d119">119</div>
@@ -356,7 +320,6 @@
                 <div class="door-right d120">120</div>
                 <div class="door-right d107 active-door">107</div>
                 
-                <!-- Overlay Habitación Seleccionada -->
                 <div class="selected-room-overlay">
                   <div class="overlay-header">
                     <span>HABITACIÓN SELECCIONADA</span>
@@ -368,7 +331,6 @@
                 </div>
               </div>
 
-              <!-- Pad de controles de movimiento -->
               <div class="sim-controls-pad">
                 <button class="pad-btn up"><i class="fa-solid fa-caret-up"></i> AVANZAR</button>
                 <div class="pad-row">
@@ -379,7 +341,7 @@
               </div>
             </div>
 
-            <!-- Panel Lateral de Ficha y Chatbot -->
+            <!-- Panel Lateral de Ficha y Asistente -->
             <div class="sim-sidebar">
               <div class="sim-card-box">
                 <h4>Ficha de habitación <span class="data-source">DATOS DEL XML</span></h4>
@@ -405,6 +367,7 @@
                   <p><span>Vista</span> <strong>Patio interior</strong></p>
                   <p><span>Accesible</span> <strong>Accesible</strong></p>
                   <p><span>Planta</span> <strong>1</strong></p>
+                  <p><span>Reservas registradas</span> <strong>1</strong></p>
                 </div>
                 <div class="sim-search-mini">
                   <input type="text" value="107" readonly>
@@ -432,6 +395,7 @@
                   <span>Habitación 101</span>
                   <span>Habitación 114</span>
                   <span>Habitación 130</span>
+                  <span>Estado de habitaciones</span>
                 </div>
               </div>
             </div>
@@ -439,43 +403,46 @@
         </div>
       </div>
 
-      <!-- Fases del Proyecto 2 -->
+      <!-- Fases y Pasos del Proyecto 2 -->
       <div class="section-card">
         <div class="section-header">
           <i class="fa-solid fa-bars-staggered icon"></i>
-          <h2>Fases de Desarrollo del Proyecto 2</h2>
+          <h2>Fases y Pasos de Desarrollo del Proyecto 2</h2>
         </div>
+        <p class="profile-text" style="margin-bottom: 1.5rem;">
+          Este proyecto se ha estructurado metodológicamente en 4 fases evolutivas para transformar la app básica de reservas en un entorno virtual interactivo[cite: 6]:
+        </p>
 
         <div class="phases-timeline">
           <div class="phase-step">
             <div class="phase-number">Fase 1</div>
             <div class="phase-content">
-              <h3>Diseño del Pasillo Virtual en 3D</h3>
-              <p>Modelado del entorno 3D que recrea el pasillo principal con sus diferentes puertas (107, 115, 117, 118, 120), luces de techo y perspectiva inmersiva accesible tanto desde navegador web como dispositivos móviles[cite: 6].</p>
+              <h3>Modelado del Entorno 3D y Pasillo Inmersivo</h3>
+              <p>Diseño y estructuración del escenario virtual que simula la perspectiva de un pasillo hotelero, incorporando elementos estéticos, iluminación cenital y la disposición espacial de las puertas de las habitaciones (107, 115, 117, 118, 120)[cite: 6].</p>
             </div>
           </div>
 
           <div class="phase-step">
             <div class="phase-number">Fase 2</div>
             <div class="phase-content">
-              <h3>Controles de Movimiento y Sensores Activos</h3>
-              <p>Implementación del pad de navegación (Avanzar, Izquierda, Derecha y Parar) junto con el uso de giroscopio/sensores móviles para desplazarse de manera fluida por la galería[cite: 6].</p>
+              <h3>Navegación Interactiva y Sensores Activos</h3>
+              <p>Implementación del panel de control de movimiento flotante (*Avanzar*, *Izquierda*, *Derecha*, *Parar*) y calibración de los sensores del dispositivo móvil (giroscopio) para permitir el desplazamiento libre y fluido por la galería[cite: 6].</p>
             </div>
           </div>
 
           <div class="phase-step">
             <div class="phase-number">Fase 3</div>
             <div class="phase-content">
-              <h3>Interacción Táctil y Selección de Habitaciones</h3>
-              <p>Al hacer clic sobre cualquiera de las puertas o tocar la pantalla del móvil, la aplicación detecta el número de habitación y muestra dinámicamente un banner flotante con el estado (Ocupada/Disponible) y precio[cite: 6].</p>
+              <h3>Interacción Táctil / Clic en Puertas</h3>
+              <p>Programación de eventos táctiles y de clic sobre las puertas del pasillo. Al interactuar con una puerta, el sistema detecta de forma inmediata el número de habitación y despliega un overlay flotante con los datos rápidos del huésped y estado[cite: 6].</p>
             </div>
           </div>
 
           <div class="phase-step">
             <div class="phase-number">Fase 4</div>
             <div class="phase-content">
-              <h3>Vinculación con XML y Asistente Virtual Lucía</h3>
-              <p>Sincronización en tiempo real de la ficha lateral con los datos extraídos de `reservas.xml` (capacidad, camas, precio) e integración del chatbot Lucía para responder consultas de habitaciones mediante lenguaje natural[cite: 6].</p>
+              <h3>Integración de Ficha Dinámica y Asistente IA (Lucía)</h3>
+              <p>Sincronización del panel lateral de la habitación seleccionada con el archivo XML de datos y desarrollo del widget conversacional inteligente (*Lucía*) capaz de responder preguntas frecuentes sobre precios, capacidad y estado de las habitaciones[cite: 6].</p>
             </div>
           </div>
         </div>
