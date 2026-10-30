@@ -30,14 +30,13 @@
 
   <!-- VISTA PRINCIPAL (PORTFOLIO) -->
   <div id="main-view" class="view-container active-view">
-    <!-- Hero Section -->
     <header id="hero" class="hero-section hero-centered">
       <div class="hero-container">
         <div class="hero-text text-center">
           <span class="badge"><i class="fa-solid fa-circle-dot"></i> Disponible para Oportunidades</span>
           <h1>Sergio Díaz de Rivera Anta</h1>
           <h2 class="typing-text">Técnico en Sistemas Microinformáticos y Redes & Estudiante de DAM</h2>
-          <p class="location"><i class="fa-solid fa-location-dot"></i> Madrid</p>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> Madrid - Valdemoro</p>
           <div class="hero-buttons center-buttons">
             <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contactar</a>
             <a href="#proyectos" class="btn btn-outline"><i class="fa-solid fa-folder-open"></i> Ver Proyectos</a>
@@ -68,22 +67,22 @@
           <div class="skill-box">
             <i class="fa-brands fa-java skill-icon"></i>
             <h3>Programación</h3>
-            <p>Java, Python</p>
+            <p>Java, Python, JavaScript</p>
           </div>
           <div class="skill-box">
             <i class="fa-solid fa-database skill-icon"></i>
-            <h3>Bases de Datos</h3>
-            <p>MySQL, Diseño y Gestión relacional</p>
+            <h3>Bases de Datos & XML</h3>
+            <p>MySQL, Parsing XML, JSON</p>
           </div>
           <div class="skill-box">
             <i class="fa-brands fa-github skill-icon"></i>
             <h3>Herramientas</h3>
-            <p>Git, GitHub, Android Studio</p>
+            <p>Git, GitHub, Android Studio, Web-3D</p>
           </div>
           <div class="skill-box">
             <i class="fa-solid fa-server skill-icon"></i>
             <h3>Sistemas y Soporte</h3>
-            <p>Instalación de S.O., mantenimiento y resolución de incidencias</p>
+            <p>Instalación de S.O., redes y mantenimiento</p>
           </div>
           <div class="skill-box">
             <i class="fa-solid fa-language skill-icon"></i>
@@ -93,38 +92,47 @@
         </div>
       </section>
 
-      <!-- Proyectos (Clickable para abrir detalle) -->
+      <!-- Proyectos -->
       <section id="proyectos" class="section-card">
         <div class="section-header">
           <i class="fa-solid fa-layer-group icon"></i>
           <h2>Proyectos</h2>
         </div>
         <div class="projects-grid">
+          
+          <!-- Proyecto 1 -->
           <div class="project-card clickable-card" onclick="openProjectDetail('hotelapp')">
             <div class="project-icon-placeholder highlight-icon">
               <i class="fa-solid fa-hotel"></i>
             </div>
-            <h3>HotelApp - Sistema de Reservas</h3>
-            <p class="project-desc">Interfaz de escritorio en JavaFX y FXML para consulta de habitaciones en tiempo real mediante archivos XML.</p>
+            <h3>HotelApp v1 - Sistema de Reservas</h3>
+            <p class="project-desc">Interfaz JavaFX y FXML para consulta de habitaciones en tiempo real mediante parsing de archivos XML[cite: 2, 3].</p>
             <div class="tags">
               <span class="tag">Java</span>
               <span class="tag">JavaFX</span>
               <span class="tag">XML</span>
               <span class="tag">Desarrollo de Interfaces</span>
             </div>
-            <span class="card-action-link">Ver detalles completos <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="card-action-link">Ver detalles de la Fase 1 <i class="fa-solid fa-arrow-right"></i></span>
           </div>
 
-          <div class="project-card empty-card">
-            <div class="project-icon-placeholder">
-              <i class="fa-solid fa-code"></i>
+          <!-- Proyecto 2 (Nuevo) -->
+          <div class="project-card clickable-card project-featured" onclick="openProjectDetail('hotel3d')">
+            <div class="project-icon-placeholder highlight-icon">
+              <i class="fa-solid fa-vr-cardboard"></i>
             </div>
-            <h3>Próximo Proyecto</h3>
-            <p class="project-desc">Espacio reservado para futuras aplicaciones y desarrollos de software.</p>
+            <div class="project-badge-new">Proyecto 2 - Ampliación</div>
+            <h3>Hotel Sol 3D - Visita Inmersiva y Asistente Lucía</h3>
+            <p class="project-desc">Simulación virtual del pasillo en 3D interactivo con sensores activos, interacción táctil/móvil con puertas y chatbot inteligente Lucía integrado[cite: 6].</p>
             <div class="tags">
-              <span class="tag">En desarrollo</span>
+              <span class="tag">Simulación 3D</span>
+              <span class="tag">Sensores / Giroscopio</span>
+              <span class="tag">Asistente IA</span>
+              <span class="tag">XML Dynamic</span>
             </div>
+            <span class="card-action-link">Ver simulación y fases <i class="fa-solid fa-arrow-right"></i></span>
           </div>
+
         </div>
       </section>
 
@@ -141,8 +149,8 @@
               <span class="date-badge">Mayo – Junio 2026 (15 días)</span>
               <h3>Técnico en Prácticas — <span class="company">prosr4pro</span></h3>
               <ul>
-                <li>Diseño y programación de servidor <strong>MCP (Model Context Protocol)</strong> integrado con <strong>Claude</strong>.</li>
-                <li>Gestión del flujo de trabajo y control de versión con <strong>GitHub</strong>.</li>
+                <li>Diseño y programación de servidor <strong>MCP (Model Context Protocol)</strong> integrado con <strong>Claude</strong>[cite: 1].</li>
+                <li>Gestión del flujo de trabajo y control de versión con <strong>GitHub</strong>[cite: 1].</li>
               </ul>
               <div class="tags">
                 <span class="tag">MCP</span>
@@ -159,11 +167,11 @@
               <span class="date-badge">Marzo – Junio 2025 (3 meses)</span>
               <h3>Técnico en Prácticas — <span class="company">BCD Electro</span></h3>
               <ul>
-                <li>Diagnóstico y reparación de sistemas informáticos y hardware.</li>
-                <li>Instalación de sistemas operativos y soporte técnico en entornos cliente.</li>
+                <li>Diagnóstico y reparación de sistemas informáticos y hardware[cite: 1].</li>
+                <li>Instalación de sistemas operativos y soporte técnico en entornos cliente[cite: 1].</li>
                 <li>Mantenimiento de equipos con control de versiones.</li>
               </ul>
-              <span class="recommendation"><i class="fa-solid fa-certificate"></i> Carta de recomendación disponible</span>
+              <span class="recommendation"><i class="fa-solid fa-certificate"></i> Carta de recomendación disponible[cite: 1]</span>
               <div class="tags">
                 <span class="tag">Hardware</span>
                 <span class="tag">Sistemas Operativos</span>
@@ -224,7 +232,7 @@
           <div class="contact-box">
             <i class="fa-solid fa-location-dot contact-icon"></i>
             <h4>Ubicación</h4>
-            <p>Madrid - España</p>
+            <p>Madrid - Valdemoro, España</p>
             <span class="click-hint">Disponibilidad para trabajar</span>
           </div>
         </div>
@@ -232,7 +240,7 @@
     </main>
   </div>
 
-  <!-- VISTA DE DETALLE DEL PROYECTO (HOTELAPP) -->
+  <!-- VISTA DE DETALLE: PROYECTO 1 (HOTELAPP) -->
   <div id="detail-view" class="view-container">
     <div class="detail-container">
       <button class="back-btn" onclick="switchView('main')">
@@ -240,99 +248,237 @@
       </button>
 
       <div class="detail-header-banner">
-        <span class="badge">Desarrollo de Interfaces</span>
-        <h1>HotelApp - Sistema de Reservas</h1>
-        <p class="detail-subtitle">Proyecto práctico de interfaz JavaFX y FXML conectado a datos XML.</p>
-        <div class="detail-meta">
-          <span><i class="fa-solid fa-user"></i> Autor: Sergio Díaz de Rivera Anta</span>
-          <span><i class="fa-regular fa-calendar"></i> Fecha: Octubre 2026</span>
-        </div>
+        <span class="badge">Proyecto 1 · Módulo: 0488 Desarrollo de Interfaces</span>
+        <h1>HotelApp - Sistema de Reservas Base</h1>
+        <p class="detail-subtitle">Interfaz de escritorio práctica en JavaFX y FXML conectada a datos XML[cite: 2, 3].</p>
       </div>
 
-      <!-- Momento 1 -->
       <div class="section-card">
         <div class="section-header">
           <i class="fa-solid fa-folder-tree icon"></i>
-          <h2>Momento 1: Estructura y Arquitectura del Proyecto</h2>
+          <h2>Estructura del Proyecto Base</h2>
         </div>
-        <p class="profile-text">
-          La aplicación está estructurada en Java utilizando Maven (`pom.xml`). Los archivos principales son:
-        </p>
         <ul class="detail-list">
-          <li><strong>Main.java:</strong> Punto de entrada principal que inicializa la aplicación JavaFX y carga la escena inicial.</li>
-          <li><strong>Controllers/DatosController.java:</strong> Controlador encargado de gestionar la lógica de negocio, procesar el archivo XML y manejar las interacciones del usuario.</li>
-          <li><strong>resources/vista.fxml:</strong> Fichero FXML que define el diseño visual de la interfaz de usuario.</li>
-          <li><strong>resources/reservas.xml:</strong> Base de datos ligera en formato XML que almacena las habitaciones y el estado de sus reservas.</li>
+          <li><strong>Main.java:</strong> Carga la escena inicial y la interfaz JavaFX[cite: 2].</li>
+          <li><strong>Controllers/DatosController.java:</strong> Maneja la lógica y lectura de datos[cite: 2].</li>
+          <li><strong>resources/vista.fxml:</strong> Layout en FXML de la ventana[cite: 2].</li>
+          <li><strong>resources/reservas.xml:</strong> Fuente de datos XML con estado de habitaciones[cite: 2, 3].</li>
         </ul>
       </div>
 
-      <!-- Momento 2 -->
-      <div class="section-card">
-        <div class="section-header">
-          <i class="fa-solid fa-magnifying-glass icon"></i>
-          <h2>Momento 2: Interfaz y Lógica de Búsqueda</h2>
-        </div>
-        <p class="profile-text">
-          Al introducir un número de habitación en el campo de texto y pulsar el botón <strong>«Buscar»</strong>, el controlador consulta el archivo XML para verificar el estado de dicha habitación. Dependiendo del resultado, la interfaz actualiza un componente <code>Label</code> mostrando de forma dinámica si está <em>Disponible</em>, <em>Ocupada</em> o si <em>No existe</em>.
-        </p>
-      </div>
-
-      <!-- Pruebas Obligatorias -->
       <div class="section-card">
         <div class="section-header">
           <i class="fa-solid fa-clipboard-check icon"></i>
-          <h2>Resultados de Pruebas Obligatorias</h2>
+          <h2>Resultados de las Pruebas</h2>
         </div>
         <div class="table-responsive">
           <table class="custom-table">
             <thead>
               <tr>
-                <th>Prueba / Estado</th>
-                <th>Dato Introducido</th>
+                <th>Prueba</th>
+                <th>Número</th>
                 <th>Resultado Esperado</th>
-                <th>Resultado Obtenido</th>
-                <th>¿Correcta?</th>
+                <th>Obtenido</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>1. Disponible</strong></td>
-                <td>N.º: 130</td>
-                <td>Indica disponible</td>
-                <td>Número de habitación: 130 - Habitación disponible</td>
-                <td><span class="badge-success">Sí</span></td>
+                <td>1. Disponible</td>
+                <td>130[cite: 4]</td>
+                <td>Habitación disponible[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
               </tr>
               <tr>
-                <td><strong>2. Ocupada</strong></td>
-                <td>N.º: 103</td>
-                <td>Indica ocupada</td>
-                <td>Número de habitación: 103 - Habitación ocupada</td>
-                <td><span class="badge-success">Sí</span></td>
+                <td>2. Ocupada</td>
+                <td>103[cite: 4]</td>
+                <td>Habitación ocupada[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
               </tr>
               <tr>
-                <td><strong>3. No existe</strong></td>
-                <td>N.º: 150</td>
-                <td>Indica que no existe</td>
-                <td>Número de habitación: 150 - La habitación no existe</td>
-                <td><span class="badge-success">Sí</span></td>
+                <td>3. No existe</td>
+                <td>150[cite: 4]</td>
+                <td>La habitación no existe[cite: 4]</td>
+                <td><span class="badge-success">Sí</span>[cite: 4]</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Momento 3 -->
+  <!-- VISTA DE DETALLE: PROYECTO 2 (HOTELSOL 3D) -->
+  <div id="detail-view-3d" class="view-container">
+    <div class="detail-container">
+      <button class="back-btn" onclick="switchView('main')">
+        <i class="fa-solid fa-arrow-left"></i> Volver al Portfolio
+      </button>
+
+      <div class="detail-header-banner">
+        <span class="badge">Proyecto 2 · Ampliación Inmersiva</span>
+        <h1>Hotel Sol / Luxury Experience — Visita 3D y Lucía AI</h1>
+        <p class="detail-subtitle">Simulación virtual del pasillo del hotel con sensores de movimiento y asistente inteligente[cite: 6].</p>
+      </div>
+
+      <!-- Muestra / Mockup visual interactivo de la interfaz -->
+      <div class="section-card preview-3d-card">
+        <div class="section-header">
+          <i class="fa-solid fa-desktop icon"></i>
+          <h2>Resultado y Captura del Entorno Virtual 3D</h2>
+        </div>
+        
+        <!-- Recreación Fiel de la Pantalla del Proyecto 2 -->
+        <div class="sim-window">
+          <div class="sim-top-bar">
+            <div class="sim-logo"><strong>HS</strong> HOTEL SOL / <span>LUXURY EXPERIENCE</span></div>
+            <div class="sim-badge-platform">ANDROID / WEB</div>
+          </div>
+          <div class="sim-pills">
+            <button class="pill active"><i class="fa-solid fa-cube"></i> Hotel 3D</button>
+            <button class="pill"><i class="fa-solid fa-camera"></i> Modo cámara</button>
+            <button class="pill active"><i class="fa-solid fa-check"></i> Sensores activos</button>
+          </div>
+
+          <div class="sim-grid">
+            <!-- Render del pasillo 3D -->
+            <div class="sim-canvas-viewport">
+              <div class="sim-viewport-title">Galería principal · experiencia 3D <span class="room-selected-badge">Habitación 107 seleccionada</span></div>
+              <div class="sim-corridor-graphic">
+                <!-- Luces de techo -->
+                <div class="ceiling-light l1"></div>
+                <div class="ceiling-light l2"></div>
+                <div class="ceiling-light l3"></div>
+                <!-- Puertas a los lados -->
+                <div class="door-left d115">115</div>
+                <div class="door-left d117">117</div>
+                <div class="door-left d119">119</div>
+                <div class="door-right d118">118</div>
+                <div class="door-right d120">120</div>
+                <div class="door-right d107 active-door">107</div>
+                
+                <!-- Overlay Habitación Seleccionada -->
+                <div class="selected-room-overlay">
+                  <div class="overlay-header">
+                    <span>HABITACIÓN SELECCIONADA</span>
+                    <strong class="overlay-room-num">107</strong>
+                  </div>
+                  <div class="overlay-type">Familiar <span class="status-occupied">Ocupada</span></div>
+                  <div class="overlay-price">165 € / noche</div>
+                  <small>Vista patio interior · Accesible</small>
+                </div>
+              </div>
+
+              <!-- Pad de controles de movimiento -->
+              <div class="sim-controls-pad">
+                <button class="pad-btn up"><i class="fa-solid fa-caret-up"></i> AVANZAR</button>
+                <div class="pad-row">
+                  <button class="pad-btn"><i class="fa-solid fa-caret-left"></i> IZQUIERDA</button>
+                  <button class="pad-btn stop">PARAR</button>
+                  <button class="pad-btn"><i class="fa-solid fa-caret-right"></i> DERECHA</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Lateral de Ficha y Chatbot -->
+            <div class="sim-sidebar">
+              <div class="sim-card-box">
+                <h4>Ficha de habitación <span class="data-source">DATOS DEL XML</span></h4>
+                <div class="room-title-bar">
+                  <div>
+                    <h5>HABITACIÓN 107 · PLANTA 1</h5>
+                    <h3 class="room-cat">Familiar</h3>
+                    <small>Capacidad: 4 persona(s)</small>
+                  </div>
+                  <span class="status-tag occupied">Ocupada</span>
+                </div>
+                <div class="room-stats-grid">
+                  <div class="stat-cell">
+                    <small>Precio por noche</small>
+                    <strong>165 €</strong>
+                  </div>
+                  <div class="stat-cell">
+                    <small>Camas</small>
+                    <strong>4 camas (estimación)</strong>
+                  </div>
+                </div>
+                <div class="room-details-list">
+                  <p><span>Vista</span> <strong>Patio interior</strong></p>
+                  <p><span>Accesible</span> <strong>Accesible</strong></p>
+                  <p><span>Planta</span> <strong>1</strong></p>
+                </div>
+                <div class="sim-search-mini">
+                  <input type="text" value="107" readonly>
+                  <button class="btn-mini-search">Buscar</button>
+                </div>
+              </div>
+
+              <!-- Asistente Lucía -->
+              <div class="sim-card-box lucia-box">
+                <div class="lucia-header">
+                  <i class="fa-solid fa-robot lucia-avatar"></i>
+                  <div>
+                    <strong>Lucía · Asistente virtual</strong>
+                    <small>Consulta local de habitaciones y reservas</small>
+                  </div>
+                </div>
+                <div class="lucia-bubble">
+                  ¡Hola! Soy Lucía. Puedo consultar las habitaciones del Hotel Sol. Por ejemplo: «¿Qué precio tiene la 114?»
+                </div>
+                <div class="lucia-input-row">
+                  <input type="text" placeholder="Pregunta a Lucía...">
+                  <button class="btn-send">Enviar</button>
+                </div>
+                <div class="lucia-chips">
+                  <span>Habitación 101</span>
+                  <span>Habitación 114</span>
+                  <span>Habitación 130</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fases del Proyecto 2 -->
       <div class="section-card">
         <div class="section-header">
-          <i class="fa-solid fa-lightbulb icon"></i>
-          <h2>Momento 3: Propuesta de Mejora (Gestos y Realidad Aumentada)</h2>
+          <i class="fa-solid fa-bars-staggered icon"></i>
+          <h2>Fases de Desarrollo del Proyecto 2</h2>
         </div>
-        <p class="profile-text">
-          Mientras que la Parte 1 implementa una interfaz básica textual de ocupación leída desde XML, la propuesta de mejora para la Parte 2 en grupo consiste en integrar el tema asignado de <strong>Gestos y Realidad Aumentada.</strong>
-        </p>
-        <p class="profile-text" style="margin-top: 1rem;">
-          Se proyecta desarrollar una vista visual interactiva en <strong>360°</strong> de las habitaciones dependiendo de su capacidad y tipología (habitaciones premium con dos camas, etc.), manteniendo la sólida base de búsqueda por número ya programada en esta primera fase.
-        </p>
+
+        <div class="phases-timeline">
+          <div class="phase-step">
+            <div class="phase-number">Fase 1</div>
+            <div class="phase-content">
+              <h3>Diseño del Pasillo Virtual en 3D</h3>
+              <p>Modelado del entorno 3D que recrea el pasillo principal con sus diferentes puertas (107, 115, 117, 118, 120), luces de techo y perspectiva inmersiva accesible tanto desde navegador web como dispositivos móviles[cite: 6].</p>
+            </div>
+          </div>
+
+          <div class="phase-step">
+            <div class="phase-number">Fase 2</div>
+            <div class="phase-content">
+              <h3>Controles de Movimiento y Sensores Activos</h3>
+              <p>Implementación del pad de navegación (Avanzar, Izquierda, Derecha y Parar) junto con el uso de giroscopio/sensores móviles para desplazarse de manera fluida por la galería[cite: 6].</p>
+            </div>
+          </div>
+
+          <div class="phase-step">
+            <div class="phase-number">Fase 3</div>
+            <div class="phase-content">
+              <h3>Interacción Táctil y Selección de Habitaciones</h3>
+              <p>Al hacer clic sobre cualquiera de las puertas o tocar la pantalla del móvil, la aplicación detecta el número de habitación y muestra dinámicamente un banner flotante con el estado (Ocupada/Disponible) y precio[cite: 6].</p>
+            </div>
+          </div>
+
+          <div class="phase-step">
+            <div class="phase-number">Fase 4</div>
+            <div class="phase-content">
+              <h3>Vinculación con XML y Asistente Virtual Lucía</h3>
+              <p>Sincronización en tiempo real de la ficha lateral con los datos extraídos de `reservas.xml` (capacidad, camas, precio) e integración del chatbot Lucía para responder consultas de habitaciones mediante lenguaje natural[cite: 6].</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="text-center" style="margin-bottom: 3rem;">
@@ -340,6 +486,7 @@
           <i class="fa-solid fa-arrow-left"></i> Volver al Portfolio Principal
         </button>
       </div>
+
     </div>
   </div>
 
@@ -348,7 +495,6 @@
     <p>&copy; 2026 Sergio Díaz de Rivera Anta | Desarrollado con HTML5, CSS3 y JS</p>
   </footer>
 
-  <!-- Toast Notification -->
   <div id="toast" class="toast">¡Copiado al portapapeles!</div>
 
   <script src="script.js"></script>
