@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// 3. Sistema de Vistas Multi-Proyecto (SPA)
+// 3. Sistema de Vistas SPA (Multiproyecto)
 function switchView(viewName) {
   const mainView = document.getElementById('main-view');
   const detailView1 = document.getElementById('detail-view');
   const detailView2 = document.getElementById('detail-view-3d');
 
-  // Ocultar todas primero
+  // Ocultar todas las vistas
   mainView.classList.remove('active-view');
   detailView1.classList.remove('active-view');
   detailView2.classList.remove('active-view');
@@ -56,7 +56,7 @@ function switchView(viewName) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// 4. Abrir detalle según el ID del proyecto
+// 4. Abrir detalle según el ID del proyecto seleccionado
 function openProjectDetail(projectId) {
   if (projectId === 'hotelapp') {
     switchView('hotelapp');
@@ -65,7 +65,7 @@ function openProjectDetail(projectId) {
   }
 }
 
-// 5. Copiar datos al portapapeles
+// 5. Copiar al portapapeles
 function copyToClipboard(text, customMessage) {
   navigator.clipboard.writeText(text).then(() => {
     showToast(customMessage || '¡Copiado al portapapeles!');
